@@ -1,19 +1,27 @@
-int velocidade = 10;
+int potenciometro = 0;
+
 void setup() {
-
-  pinMode (3, OUTPUT);
-  pinMode (5, OUTPUT);
-  pinMode (6, OUTPUT);
-  pinMode (9, OUTPUT);
-  pinMode (10, OUTPUT);
-  
+  Serial.begin(9600);
 }
-
 void loop() {
-  analogWrite(3, 255);
-  analogWrite(5, 255);
-  analogWrite(6, 255);
-  analogWrite(9, 255);
-  analogWrite(10, 255);
-  
+potenciometro = analogRead (A0);
+Serial.print("Leitura da porta:");
+Serial.println(potenciometro);
+delay(100);
+}
+int potenciametro = 0;
+int valorPWM;
+#define pin_led 3
+
+void setup() {
+  Serial.beguin(9600);
+  pinMode(pin_led, OUTPUT);
+}
+void loop() {
+  potenciometro = analogRead (A0);
+  Serial.print ("Leitura da porta:");
+  Serial.println(potenciamento);
+  delay(100);
+
+v
 }
